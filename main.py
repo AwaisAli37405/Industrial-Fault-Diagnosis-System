@@ -40,12 +40,6 @@ def main():
                          f"Confusion Matrix (With SMOTE)\nAccuracy: {acc_smote:.2%}",
                          "cm_with_smote.png")
     
-    # Success Metric: Target ~96.2%
-    print(f"\nFinal Accuracy with SMOTE: {acc_smote:.2%}")
-    if abs(acc_smote - 0.962) < 0.02:
-        print("Target success metric achieved!")
-    else:
-        print(f"Difference from target: {acc_smote - 0.962:.2%}")
 
 if __name__ == "__main__":
     main()
